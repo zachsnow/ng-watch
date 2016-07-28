@@ -49,3 +49,5 @@ To build a release and run tests:
   $ bower install
   $ gulp test
 ```
+
+(There aren't actually any tests).
