@@ -3,7 +3,8 @@
 A simple directive to re-transclude content when a value changes; for use with one-time bindings
 via the `::` operator.
 
-Check out a [live example](https://plnkr.co/edit/7Z35Crga6ca6MrmOQenO?p=preview).
+Check out a [live example](https://plnkr.co/edit/7Z35Crga6ca6MrmOQenO?p=preview),
+or see [this post](http://zachsnow.com/blog/) for more information.
 
 ## Dependencies
 
