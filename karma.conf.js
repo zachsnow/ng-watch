@@ -8,6 +8,9 @@
       preprocessors: {
         'src/**/*.js': ['coverage']
       },
+      files: [
+        'test/**/*.js'
+      ],
       reporters: ['progress', 'coverage'],
       coverageReporter: {
         reporters:[

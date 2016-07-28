@@ -9,11 +9,13 @@
 
   var testFiles;
 
-  gulp.task('test', function (done) {
+  gulp.task('test', function(done) {
     new karma.Server({
       configFile: __dirname + '/karma.conf.js',
       singleRun: true
-    }, done).start();
+    }, function(){
+      done();
+    }).start();
   });
 
   gulp.task('jshint', function () {
