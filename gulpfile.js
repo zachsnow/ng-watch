@@ -18,29 +18,22 @@
     }).start();
   });
 
-  gulp.task('jshint', function () {
-    return gulp.src(['.tmp/**/*.js'])
-      .pipe($.jshint())
-      .pipe($.jshint.reporter('jshint-stylish'))
-      .pipe($.jshint.reporter('fail'));
-  });
-
   gulp.task('compress', function() {
-    return gulp.src(['.tmp/**/*.js'])
+    return gulp.src(['src/**/*.js'])
       .pipe($.uglify())
       .pipe($.concat('watch.min.js'))
-      .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('build/'))
       .pipe($.size());
   });
 
   gulp.task('concat', function() {
-    return gulp.src(['.tmp/**/*.js'])
+    return gulp.src(['src/**/*.js'])
       .pipe($.concat('watch.js'))
-      .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('build/'))
       .pipe($.size());
   });
 
   gulp.task('default', ['build']);
 
-  gulp.task('build', ['test', 'jshint', 'compress', 'concat']);
+  gulp.task('build', ['test', 'compress', 'concat']);
 })();

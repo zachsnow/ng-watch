@@ -4,3 +4,4 @@
 /test/coverage
 /.idea/
 .tmp
+/build/
