@@ -4,7 +4,7 @@ A simple directive to re-transclude content when a value changes; for use with o
 via the `::` operator.
 
 Check out a [live example](https://plnkr.co/edit/7Z35Crga6ca6MrmOQenO?p=preview),
-or see [this post](http://zachsnow.com/blog/) for more information.
+or see [this post](http://zachsnow.com/blog/2016/angularjs-ng-watch/) for more information.
 
 ## Dependencies
 
